@@ -83,11 +83,11 @@ const CreatePoint = () => {
         setFormData({...formData, [name]: value});
     }
 
-    function handleTextAreaChange(event: ChangeEvent<HTMLInputElement>) {
-        const {name, value} = event.target;
+    // function handleTextAreaChange(event: ChangeEvent<HTMLInputElement>) {
+    //     const {name, value} = event.target;
 
-        setFormData({...formData, [name]: value});
-    }
+    //     setFormData({...formData, [name]: value});
+    // }
 
     async function handleSubmit(event: FormEvent) {
         event.preventDefault();
@@ -158,15 +158,12 @@ const CreatePoint = () => {
 
                     <div className="field relato">
                         <label htmlFor="descricao">Relato</label>
-                        <textarea  name="descricao" id="descricao">
-
-                        </textarea>
-                        {/* <input
+                        <input
                             type="text"
                             name="descricao"
                             id="descricao"
                             onChange={handleInputChange}
-                        /> */}
+                        />
                     </div>
                 </fieldset>
 
